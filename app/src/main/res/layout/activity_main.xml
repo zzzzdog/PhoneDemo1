@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.phonedemo.MainActivity">
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="型号"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>]
+    <TextView
+        android:id="@+id/typemessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/type"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/engine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电量"
+        android:textSize="24sp"
+        android:layout_below="@+id/type"
+        />]
+
+    <TextView
+        android:id="@+id/enginemessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/engine1"
+        android:layout_toRightOf="@id/engine1"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/getmessage"
+        android:text="获取"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/engine1"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/postmessage"
+        android:text="上传"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/getmessage"
+        android:layout_toRightOf="@id/getmessage"/>
+</RelativeLayout>
